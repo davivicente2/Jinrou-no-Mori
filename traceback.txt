@@ -1,0 +1,78 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 759, in execute
+    screen preferences():
+  File "game/screens.rpy", line 759, in execute
+    screen preferences():
+  File "game/screens.rpy", line 763, in execute
+    use game_menu(_("Preferences"), scroll="viewport"):
+  File "game/screens.rpy", line 447, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 447, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 451, in execute
+    if main_menu:
+  File "game/screens.rpy", line 454, in execute
+    add gui.game_menu_background
+  File "game/screens.rpy", line 454, in <module>
+    add gui.game_menu_background
+AttributeError: 'StoreModule' object has no attribute 'game_menu_background'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\joker\Downloads\VN Project\YandereGame\Engines\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 759, in execute
+    screen preferences():
+  File "game/screens.rpy", line 759, in execute
+    screen preferences():
+  File "game/screens.rpy", line 763, in execute
+    use game_menu(_("Preferences"), scroll="viewport"):
+  File "game/screens.rpy", line 447, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 447, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 451, in execute
+    if main_menu:
+  File "game/screens.rpy", line 454, in execute
+    add gui.game_menu_background
+  File "game/screens.rpy", line 454, in <module>
+    add gui.game_menu_background
+AttributeError: 'StoreModule' object has no attribute 'game_menu_background'
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.2.0.24012702
+Jinrou no Mori 1.5
+Sat Mar  2 10:49:26 2024
