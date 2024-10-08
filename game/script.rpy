@@ -141,7 +141,8 @@ label start:
 label some_other_part_of_the_game:
     $ remove_item(PropTeste)  # Remove o cachorro-quente
     mc "Eu comi o cachorro-quente."
-
+   "Mini game":
+      jump mini_game
 
 label continuing:
 

@@ -26,3 +26,8 @@ label drama:
  "A piada é estúpida, mas é sempre divertido brincar quando ele está por perto..."
  
  jump continuing
+
+label mini_game:
+    $ randomize_cards()
+    call screen memory_mini_game
+return
