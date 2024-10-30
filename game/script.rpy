@@ -32,6 +32,7 @@ label start:
  scene scene_1
  with dissolve
  
+ 
 
  mc "Mais um dia de trabalho terminou. Finalmente, um pouco de descanso..."
  mc "Pelo menos até o próximo projeto..."
@@ -137,12 +138,13 @@ label start:
       jump dumb
    "O atendimento aqui é incrível, bom senhor":
       jump drama
+   "Mini game":
+      jump mini_game
 #Teste de deletar item
 label some_other_part_of_the_game:
     $ remove_item(PropTeste)  # Remove o cachorro-quente
     mc "Eu comi o cachorro-quente."
-   "Mini game":
-      jump mini_game
+
 
 label continuing:
 
@@ -250,9 +252,10 @@ label continuing3:
  mc "Então, ainda gosta de palhaços?"
  "Eu olho para o broche de palhaço em seu avental."
  
+ #Começo das alteracoes:
+ jump day_2
 
  #Teste de final de jogo...
- jump endgame
 
 label endgame:
 

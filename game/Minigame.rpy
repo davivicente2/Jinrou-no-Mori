@@ -80,7 +80,7 @@ screen memory_mini_game:
         timer 0.5 action Function(reset_memory_game) repeat False
     
 
-label mini_game:
-    $ randomize_cards()
-    call screen memory_mini_game
-    return
+#label mini_game:
+#    $ randomize_cards()
+#    call screen memory_mini_game
+#    return
